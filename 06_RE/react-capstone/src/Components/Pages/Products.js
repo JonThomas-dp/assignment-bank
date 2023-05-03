@@ -8,10 +8,10 @@ export default function Products(props) {
   const [searchCategory, setSearchCategory] = useState([]);
   const [productsFiltered, setProductsFiltered] = useState([]);
   const [filters, setFilters] = useState({
-    men: true,
+    men: false,
     jewelery: false,
     electronics: false,
-    women: true
+    women: false
   });
 
   useEffect(
@@ -52,15 +52,8 @@ export default function Products(props) {
         productsFiltered[2] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         productsFiltered[0].push(...productsFiltered[2])
-        console.log(productsFiltered)
-        console.log("4)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -79,15 +72,8 @@ export default function Products(props) {
         productsFiltered[2] = productsInfo.filter(
           (product) => product.category === "electronics"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         productsFiltered[0].push(...productsFiltered[2])
-        console.log(productsFiltered)
-        console.log("4)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -106,15 +92,8 @@ export default function Products(props) {
         productsFiltered[2] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         productsFiltered[0].push(...productsFiltered[2])
-        console.log(productsFiltered)
-        console.log("4)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -133,15 +112,8 @@ export default function Products(props) {
         productsFiltered[2] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         productsFiltered[0].push(...productsFiltered[2])
-        console.log(productsFiltered)
-        console.log("4)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -157,12 +129,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -178,12 +145,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "electronics"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -199,12 +161,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "jewelery"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -220,12 +177,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -241,12 +193,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "electronics"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -262,12 +209,7 @@ export default function Products(props) {
         productsFiltered[1] = productsInfo.filter(
           (product) => product.category === "women's clothing"
         );
-        console.log("1)")
-        console.log(productsFiltered)
-        console.log("2)")
         productsFiltered[0].push(...productsFiltered[1])
-        console.log(productsFiltered)
-        console.log("3)")
         setSearchCategory(productsFiltered[0])
       }
       if (
@@ -293,7 +235,6 @@ export default function Products(props) {
             (product) => product.category === "electronics"
           )
         );
-        console.log(searchCategory);
       }
       if (
         filters["men"] === false &&
@@ -306,7 +247,6 @@ export default function Products(props) {
             (product) => product.category === "jewelery"
           )
         );
-        console.log(searchCategory);
       }
       if (
         filters["men"] === true &&
@@ -317,7 +257,6 @@ export default function Products(props) {
         setSearchCategory(
           productsInfo.filter((product) => product.category === "men's clothing")
         );
-        console.log(searchCategory);
       }
     },
     [],
