@@ -153,7 +153,7 @@ export const productsInfo = [
       rating: { rate: 3.8, count: 679 }
     },
     { 
-      id: 20,
+      id: 18,
       title: 'DANVOUY Womens T Shirt Casual Cotton Short',
       price: 12.99,
       description: '95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.',

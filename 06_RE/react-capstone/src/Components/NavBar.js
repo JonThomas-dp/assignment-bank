@@ -11,7 +11,7 @@ import About from "./Pages/About";
 export default function NavBar() {
   return(
     <div className="nav-bar">
-        <div classsName="nav-bar-left">
+        <div className="nav-bar-left">
           <NavLink className="change-to-NavLink" to="/">LOGO</NavLink>
         </div>
         <div className="nav-bar-right">
