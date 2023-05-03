@@ -1,0 +1,57 @@
+Welcome to the Front End Web Development Capstone! As a developer you will need key items for your portfolio that will showcase your skills, but also showcase your professional product and work ethics. Your goal with this project should be to produce quality code and professional output that you wish to show potential employers.
+
+The requirements are likely more open-ended than you are used to. This is on purpose. This will allow you flexibility to produce a solution that you can design on your own. However, make sure that your solution meets all of the requirements. Please feel free to ask clarifying questions so that you fully understand the requirements.
+
+HINT: This project is sizable and can seem overwhelming. This is true of almost any project we will encounter “in the wild”. Start by breaking the project down into smaller pieces, like classes, functions or smaller snippets of code. This will help you keep moving forward and not being stuck.
+HINT: Start with what you know. There may be some parts of the project that you are struggling to know where to start. Start by working through the parts that you do know. It will most likely help you understand the parts you aren’t as familiar with and it always feels better to accomplish something than to become frustrated with what you don’t yet know.
+
+Capstone Overview
+
+In this capstone you will create an E-commerce application. Your application will allow users to browse products, add them to a shopping list, and remove them from the shopping list
+
+Include the following in your E-commerce application:
+
+Overall
+	Style with the SCSS (sass npm library) and responsive design (in full-screen and mobile)
+	Create a paper wireframe first and make sure your design flows
+	Create a React application using version 17 in VSCode using CRA
+	Import the library react-router-dom@5 library
+	Use the fake store API for each product in the e-commerce stsore: https://fakestoreapi.com/docs
+	Navigation Bar with logo and links to each of the application's page at the top of each page
+	Footer with fake address, phone and store name at the bottom of each page
+Home Page
+Products Page that will display all the products on their own individual cards
+	A search function should include:
+	Filters (hides and shows) certain products
+	Organizes the shown products by several orders
+	Alphabetical (descending and ascending)
+	Numerical (least and most)
+	Individual Cards for each product should include:
+	Image and Product
+	Title of Product
+	Truncated Description
+	Add to Cart button
+	Link to the product's page
+Cart Page
+	List all products currently in the cart
+	Remove a product from cart button for each added item
+	A button to decrease or increase the amount of a product in cart for each added item
+	Checkout Button (which does not have to process any payment)
+	Total price with subtotal and shipping
+Contact Page
+	Contact form (non-functional) that asks for the following:	
+		First Name
+		Last Name
+		Email
+		Message (textarea)
+		Submit Button (information does not have to be sent anywhere) should do the following:
+		Create a popup message that state the message was sent
+		Clears the form
+About Page
+		Explain the process of your capstone
+		Explain struggles you experienced throughout the frontend course and how you solved them
+		Explain your favorite lanugages and why
+
+NOTE: While writing your reflection you want to sound like a developer. While reflecting on the course use each term or concept we discussed in class, define each term, and connect it to how it improved your project.
+
+NOTE: Employers want to see your journey. Vulnerability is a strong skill employers will connect with. Be proud of each failure that brought you to the correct answer. Write your reflection in a narrative (or story) format. Speak about the challenges and do not connect them to yourself. (For example, don’t say: “I struggled with properly sizing the input box”. Rather, say: “Because of the positioning of the left menu, the input box had to be resized in a new way.” This will showcase your vulnerability as a strength to continue finding solutions rather than showcasing what weaknesses you might bring to your future employment.

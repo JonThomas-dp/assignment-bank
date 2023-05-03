@@ -1,0 +1,32 @@
+.footer-main-container {
+    margin-top: auto;
+    background-color: #767676;
+}
+
+.footer-main-container * {
+    color: white;
+}
+
+.footer-main-content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.footer-left-content-container {
+    text-align: left;
+}
+
+.footer-company-name {
+    margin-bottom: 0;
+}
+
+.footer-company-address {
+    margin-top: 0;
+}
+
+.footer-copyright {
+    text-align: center;
+}

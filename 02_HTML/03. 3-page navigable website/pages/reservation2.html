@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Reservation - Anitqua Forma</title>
+</head>
+
+<body>
+  <div class="navbar-container">
+      <div class="navigation-menu-left">
+          <a href="../index-final.html"><i class="fa-solid fa-pizza-slice fa-2xl"></i>
+          <p>Antica Forma</p></a>
+      </div>
+      
+      <div class="navigation-menu-center">
+          <a href="../index.html">menu</a>
+          <a href="./blog.html">blog</a>
+      </div>
+      <div class="navigation-menu-right">
+          <input class="search-bar" type="search" placeholder="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+  </div>
+
+  <form>        
+    <div class="reservation-form">
+      <div class="reservation-input">
+        <h2><i>Book a Reservation</i></h2>
+      </div>
+      <div class="reservation-input">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first_name" id="first-name" placeholder="first name" >        
+      </div>
+      <br>
+      <div class="reservation-input">
+        <label for="last-name">Last Name*</label>
+        <input type="text" name="lastname" id="last-name" placeholder="last name" required="true">        
+      </div>
+      <br>
+      <div class="reservation-input">
+        <label for="date">Date of Reservation</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <br>
+      <div class="reservation-input">
+        <label for="time">Time of Reservation</label>
+        <input type="time" name="time" id="time">
+      </div>
+      <br>
+          
+      <div class="reservation-input">
+      <p>Please choose one appetizer for your meal:</p>
+        <div class="reservation-input-radio">
+          <input type="radio" name="appetizier" id="mozarellasticks" value="mozzarella sticks">
+          <label for="mozarellasticks">Mozarella Sticks</label>
+        </div>
+
+        <div class="reservation-input-radio">
+          <input type="radio" name="appetizier" id="mozarellasticks" value="mozzarella sticks">
+          <label for="mozarellasticks">Mac n' Cheese Bites</label>
+        </div>
+
+        <div class="reservation-input-radio">
+          <input type="radio" name="appetizier" id="mozarellasticks" value="mozzarella sticks">
+          <label for="mozarellasticks">Hush Puppies</label>
+        </div>
+
+      </div>
+      <br>
+      
+      <div class="reservation-input">
+        <p>Please choose one pasta for your meal:</p>
+        <div class="reservation-input-select">
+          <select name="pasta">
+              <option value="">Please choose one</option>
+              <option value="spaghetti" name="spaghetti">Spaghetti</option>
+              <option value="linguine" name="linguine">Linguine</option>
+              <option value="lasanga" name="lasanaga">Lasanga</option>
+          </select>
+        </div>
+              
+      </div>
+
+      <div class="reservation-input">
+      <br>
+      <p>Would you like any of the following (check all that apply):</p>
+
+          <div class="reservation-input-checkbox">
+              <input type="checkbox" name="drink" id="drink" value="drink">
+              <label for="drink">Drink</label>
+          </div>
+
+          <div class="reservation-input-checkbox">
+              <input type="checkbox" name="dessert" id="dessert" value="dessert">
+              <label for="dessert">Dessert</label>
+          </div>
+
+          <div class="reservation-input-checkbox">
+              <input type="checkbox" name="salad" id="salad" value="salad">
+              <label for="salad">Salad</label>
+          </div>
+
+      </div>    
+
+      <div class="reservation-input">
+      <p>Additional Information for your reservation:</p>    
+        <div class="reservation-input-comments">
+            <textarea name="comments" id="comments" rows="4" placeholder="let us know anything to make this reservation special"></textarea>
+            <label for="comments"></label>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="reservation-input">
+        <label for="email">Email</label>
+        <input type="email" name="password" id="password" placeholder="email">       
+      </div>
+      <div class="reservation-input">
+        <input type="checkbox" name="notifications" id="notifications" checked="true">
+        <label for="notifications">I would like to be notified 30 minutes before my reservation by email.</label>
+      </div>
+      <br>
+      <div class="reservation-input">
+          <input class="button" type="submit" value="Book">
+      </div>
+      <br>
+    </div>
+  </form>
+</div>
+<footer class="footer">
+  <div class="footer-company-description">
+    <div class="footer-company-logo-name">
+      <a href="./index.html"><i class="fa-solid fa-pizza-slice fa-2xl"></i><p>Antica Forma</p></a>
+    </div>
+    <div class="footer-company-vision">
+      <p>A quiet, comfortable place to connect with good food and good company. We are the proud favorite italian restaurant of Jason Fletcher in all of Uintah County.</p>
+    </div> 
+    <div class="footer-fda">
+      <p>Explore the<a href="https://health.gov/sites/default/files/2019-09/Appendix-E3-1-Table-A4.pdf" target="_blank"> FDA's DAILY NUTRITIONAL NEEDS</a> for more information.</p>
+    </div>
+  </div>             
+  <div class="footer-contact">
+    <h3>Contact</h3>
+    <div class="footer-address">
+      <i class="fa-solid fa-house"></i>
+      <p>251 E Main St, Vernal, UT 84078</p>
+    </div>
+    <div class="footer-email">
+      <i class="fa-solid fa-envelope"></i>
+      <p>fakeemail@anticaforma.com</p>
+    </div>
+    <div class="footer-phone-number">
+      <i class="fa-solid fa-phone"></i>
+      <p>+1 435 374 4138</p>
+    </div>
+  </div>
+  <div class="footer-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.8644207478783!2d-109.52598508415417!3d40.45613766116485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8745623573f86a1b%3A0x2bf092d386afc5db!2sAntica%20Forma!5e0!3m2!1sen!2sus!4v1658327177100!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>      
+  <div class="footer-copyright">
+      <i class="fa-regular fa-copyright"></i>
+      <p>2022 This website is for practice only</p>
+  </div>    
+</footer>
+</body>
+
+</html>

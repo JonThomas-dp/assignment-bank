@@ -1,0 +1,221 @@
+@import "variables.scss";
+
+.hero-image {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-image-card {
+    width: 30%;
+    margin: 3%;
+    border: 2px solid lightgrey;
+}
+
+.hero-image-card::before {
+    @include transition-animation;
+    height: 100%;
+    width: 100%;
+    background-color: #80808040;
+}
+
+.hero-image-card:hover::before {
+    box-shadow: 0px 0px 10px 2px #808080;
+    height:100%;
+    width: 100%;
+    background-color: #80808000;
+}
+
+.hero-image-card-image {
+    width: 100%;
+    height: 40vh;
+}
+
+.hero-image-title, .blog-title, .product-card-container-title, .hero-image-card-title, .product-card-title, .blog-title {
+    color: rgba(0,0,64);
+    text-align: center;
+}
+
+.hero-image-title, .blog-title, .product-card-container-title {
+    font-size: 48px;
+}
+
+.hero-image-card-title {
+    font-size: 36px;;
+}
+
+.hero-image-card {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    margin: 24px;
+  }
+
+.home-body-content {
+    margin-bottom: 128px;
+}
+
+.product-card-container {
+    height: 85vh;
+}
+
+.product-card-content-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 7.5% 2.5%;
+    width: 80%;
+    margin: auto;
+}
+
+.product-card {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 0 10px 1px grey;
+    background: #80808030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card::before {
+    @include transition-animation;
+}
+
+.product-card:hover::before {
+    width: 19%;
+    height: 200px;
+    background: #E0E0E030;
+}
+
+.blog-card-label {
+    padding-bottom: 6px;
+}
+
+.blog-card-container {
+    width: 60%;
+    margin: auto;
+}
+
+.blog-card-title-container, .blog-title, .blog-card-label, .blog-card-title {
+    margin: 0;
+}
+
+.blog-card {
+    margin: 120px 0;
+}
+
+.blog-card-description {
+    width: 90%;
+    font-size: 24px;
+    margin-left: 24px;
+    color: #404040;
+}
+
+  .footer-container .nav-bar-link {
+    color: white;
+  }
+
+  .footer-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    border: 2px solid navy;
+    background-color: white;
+    z-index: 1;
+    background: grey;
+}
+
+  .blog-card::before {
+    @include transition-animation;
+    left: 19%;
+    height: 0;
+    width: 4px;
+}
+
+.blog-card:hover::before {
+    background-color: rgba(0,0,64);
+    left: 19%;
+    height: 10%;
+    width: 4px;
+}
+
+.product-card-content-cardigans {
+    background: url("https://images.unsplash.com/photo-1581497396202-5645e76a3a8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-scarves {
+    background: url("https://images.unsplash.com/photo-1550263292-000a0d08ffa0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a25pdCUyMHNjYXJmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-dresses {
+    background: url("sweater-dress.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-skirts {
+    background: url("sweater-skirt.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-socks {
+    background: url("knit-socks.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-pants {
+    background: url("sweater-pants.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-headbands {
+    background: url("https://images.unsplash.com/photo-1544248168-913d22a1cb96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a25pdCUyMGhlYWRiYW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-beanies {
+    background: url("https://images.unsplash.com/photo-1486559015136-da87c2012ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtuaXQlMjBiZWFuaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-gloves {
+    background: url("https://images.unsplash.com/photo-1452689842785-5f14840dca48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8a25pdCUyMGdsb3Zlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-blankets {
+    background: url("knit-blanket.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-sweater {
+    background: url("https://images.unsplash.com/flagged/photo-1574874897534-036671407eda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHN3ZWF0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-content-stuffed-animals {
+    background: url("https://images.unsplash.com/photo-1629019317873-3f603b269723?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eWFybiUyMHN0dWZmZWQlMjBhbmltYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+}

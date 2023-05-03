@@ -1,0 +1,76 @@
+.main-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.tasks-container {
+    height: 70vh;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-task {
+    width: 60%;
+    height: 36px;
+    font-size: 18px;
+    text-indent: 12px;
+}
+
+.input-task, .input-container button {
+    margin: 12px;
+}
+
+button {
+    padding: 0 24px;
+}
+
+.tasks-content-container {
+    overflow: auto;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.tasks-content-container {
+    width: 60%;
+    margin: 48px auto;
+}
+
+.task-item-container {
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.task-item-container * {
+    display: inline-block;
+}
+
+.task-item-container:hover {
+    background-color: lightgrey;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0 48px 0 24px;
+    cursor: pointer;
+}
+
+.task-content {
+    width: 80%;
+}
+
+.fa-trash-can {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+

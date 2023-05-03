@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: rgba(15,15,15)
+}
+
+.main-container {
+    display: flex;
+}
+
+.side-bar {
+    width: 25%;
+    height: 100vh;
+    background-color: rgba(30,30,30);
+    overflow: auto;
+}
+
+.title-header { 
+    margin: 0;
+    padding: 48px 48px 24px 48px;
+    color: rgba(200, 200, 200);
+    text-align: center;
+}
+
+.student-name-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.student-name {
+    width: 60%;
+    margin: 24px 0px;
+    color: rgba(200, 200, 200);
+}
+
+.priority-value {
+    width: 30%;
+    color: white;
+}
+
+.priority-button {
+    width: 48px;
+    height: 36px;
+    font-size: 24px;
+}
+
+hr {
+    width: 60%;
+}
+
+.generator-container {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99.5vh;
+}
+
+.generator-app-container {
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px white;
+}
+
+.generator-app-container p {
+    margin: 48px;
+}
+
+.generator-chosen-student {
+    color: white;
+    height: 48px;
+}
+
+.generator-app-button {
+    width: 128px;
+    height: 42px;
+}
+
+.winner-title {
+    color: rgb(220, 220, 220);
+}

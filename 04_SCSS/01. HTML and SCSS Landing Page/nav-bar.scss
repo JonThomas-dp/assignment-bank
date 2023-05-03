@@ -1,0 +1,74 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    border: 2px solid navy;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-bar-left * {
+    margin: auto;
+    text-align: center;
+}
+
+.fa-socks {
+    font-size: 32px;
+    margin-bottom: -15%;
+    color: lightgrey;
+}
+
+.nav-bar-logo-text {
+    margin-top: -15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: navy;
+}
+
+.nav-bar-link {
+    font-size: 12px;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: navy;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    margin: 24px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.3rem;
+    height: 3px;
+    width: 0;
+    transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+    content: "";
+    background-color: navy;
+    position: absolute;
+    left: 0;
+    bottom: -.3rem;
+    height: 3px;
+    width: 100%;
+}
+
+.nav-bar-static {
+    height: 66px;
+}

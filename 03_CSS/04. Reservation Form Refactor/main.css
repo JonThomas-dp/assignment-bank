@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+}
+
+.nav-bar {
+  z-index: 0;
+}
+
+.nav-bar, .nav-bar a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  background: dodgerblue;
+  height: 72px;
+  color: white;
+  text-decoration: none;
+}
+
+  .nav-bar-left {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    padding-left: 15%;
+    margin: 2.5%;
+  }
+
+    .nav-bar-left p {
+      margin-left: 8px;
+      font-size: 18px;
+    }
+
+    .fa-plane {
+      font-size: 48px;
+    }
+
+    .nav-bar-search {
+      border-radius: 12px;
+      border: 1px solid grey;
+      height: 28px;
+      outline: none;
+      padding: 10px;
+    }
+
+    .fa-magnifying-glass {
+      margin: -15%;
+      vertical-align: middle;
+      color: grey;
+    }
+
+  .nav-bar-right {
+    padding-right: 96px;
+  }
+
+  .link-container {
+    display: inline-block;
+  }
+
+  .footer {
+    background-color: #1b1b1b;
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 8fr 1fr;
+      color: white;
+  }
+  
+    .footer-company-description {
+      grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 2rem;
+      }
+      
+        .footer-company-logo-name p {
+          display: inline;
+          font-weight: bolder;
+            font-size: large;
+          text-decoration: underline overline;
+        }
+  
+    .footer-contact {
+      grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 12px;
+    }
+  
+      .footer-contact div {
+        padding: .75em;
+      }
+      .footer-contact p {
+        display: inline;
+      }
+  
+    .footer-map {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      justify-self: end;
+    }
+  
+    .footer-copyright {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-start: 3;
+      margin: 0 auto;
+    }
+  
+    .footer-copyright p {
+      display: inline;
+    }

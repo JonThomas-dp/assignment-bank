@@ -1,0 +1,29 @@
+.nav-bar {
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-bar-left {
+    width: 50%;
+}
+
+.nav-bar-right {
+    width: 30%;
+}
+
+.nav-bar-link-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.change-to-NavLink {
+    padding: 12px;
+}
+
+.change-to-NavLink:hover {
+    padding: 12px 12px 8px 12px;
+    border-bottom: 4px solid skyblue;
+}

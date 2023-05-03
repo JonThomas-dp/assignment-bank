@@ -1,0 +1,88 @@
+body {
+  background: url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: dodgerblue;
+  width: 30%;
+  margin: 5% auto;
+  color: white;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1400px) {
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    width: 100%;
+  }
+}
+  .form-container-secondary {
+    width: 70%;
+    margin: auto;
+  }
+
+.reservation-form {
+  padding: 10% 0;
+}
+
+.form-heading {
+  padding: 12px 0;
+  background-color: rgba(0,0,255,.5);
+  text-align: center;
+  
+}
+
+form input[type="text"], form input[type="email"], form input[type="phone"] {
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+form input[type="date"] {
+  display: block;
+}
+
+form input[type="submit"] {
+  margin: auto;
+  display: block;
+}
+
+.date-set {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selection-container {
+  margin: 18px 0;
+}
+
+.selection-container h4 {
+  margin-bottom: 6px;
+}
+
+.selection-container input {
+  margin: 6px 0 0 18px;
+}
+
+hr {
+  width: 100%;
+}

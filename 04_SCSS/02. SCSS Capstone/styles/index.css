@@ -1,0 +1,123 @@
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../assets/images/hero-image.jpg");
+  background-size: cover;
+}
+
+.hero-image-contents {
+  text-align: center;
+  color: white;
+}
+
+.hero-image-title {
+  font-size: 72px;
+  margin-bottom: 0;
+}
+
+.hero-image-description {
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+
+.common-button {
+  margin: auto;
+}
+
+.index-contents-container {
+  width: 95%;
+  margin: -10% auto 0;
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 10px 10px 100px 10px rgba(0, 0, 0, 0.3);
+}
+
+.panel {
+  padding: 48px 0;
+}
+
+.panel-content-container {
+  width: 90%;
+  margin: 36px auto;
+}
+
+.secondary-panel-content-container {
+  display: flex;
+}
+
+.panel-card-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.panel-card {
+  width: 30%;
+  margin: 0 3%;
+}
+
+.about-panel, .contact-panel {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/images/background-slider.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-panel-card-title {
+  padding: 24px 0;
+}
+
+.panel-title {
+  margin: 0 0 72px 0;
+}
+
+.secondary-panel-content-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-panel-card {
+  width: 40%;
+}
+
+.contact-panel-card {
+  margin-left: 5%;
+}
+
+.mission-panel-card * {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.secondary-panel-image {
+  width: 100%;
+}
+
+@media (orientation: landscape) and (max-height: 900px) {
+  * {
+    border: 1px solid black;
+  }
+  .hero-image-container {
+    height: 100vh;
+  }
+  .index-contents-container {
+    margin-top: 0;
+  }
+}
+@media (orientation: portrait) and (max-width: 1280px) {
+  .panel-card-container, .secondary-panel-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .panel-card, .secondary-panel-card {
+    margin: 48px auto;
+    width: 80%;
+  }
+  .panel-title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webform</title>
+  <link href="webform.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="nav-bar">
+    <a class="link-logo-home" href="index.html">
+      <div class="nav-bar-left">
+        <i class="fa-solid fa-plane"></i>
+        <p>Company Name</p>
+      </div>
+    </a>
+    <div class="nav-bar-center">
+      <form>
+        <input class="nav-bar-search" type="search" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+    </div>
+    <div class="nav-bar-right">
+      <div class="link-container"><a href="index.html">Home</a></div>
+      <div class="link-container"><a href="webform.html">Reservation</a></div>
+    </div>
+  </div> 
+  <div class="webform-container">
+    <div class="form-container">
+      <h2 class="form-heading">Reservation Form</h2>
+      <div class="form-container-secondary">
+        <form class="reservation-form" action="https://httpbin.org/post" method="post">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" placeholder="first name" required><br>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name"  placeholder="last name" required><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email" required><br>
+          <label for="phone-number">Phone Number:</label>
+          <input type="phone" id="phone-number" placeholder="Phone Number" name="phone-number" required><br>
+          <div class="date-set">
+            <div class="date-set-start">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" name="start-date" required><br>
+            </div>
+            <div class="date-set-end">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" name="end-date" required><br>
+            </div>
+          </div>
+          <hr>
+          <div class="selection-container">
+            <h4>Additional Accommodations</h4>
+            <input type="checkbox" id="rental-car" name="accommodations" value="rental-car">
+            <label for="rental-car">Rental Car</label><br>
+            <input type="checkbox" id="hotel" name="accommodations" value="hotel">
+            <label for="hotel">Hotel</label><br>
+            <input type="checkbox" id="bus" name="accommodations" value="bus">
+            <label for="rental-car">Bus</label><br>
+          </div>
+          <hr>
+          <div class="selection-container">
+            <h4>Available Options</h4>
+            <input type="radio" id="basic-package" name="package" value="basic-package">
+          <label for="basic-package">Basic</label><br>
+          <input type="radio" id= "premium-package" name="package" value="premium-package">
+          <label for="premium-package">Premium</label><br>
+          </div>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-company-description">
+        <i class="fa-solid fa-plane"></i>
+        <p>Company Name</p></a>
+    </div>             
+    <div class="footer-contact">
+        <h3>Contact</h3>
+        <div class="footer-address">
+            <i class="fa-solid fa-house"></i>
+            <p>351 E Main St, Provo, UT 84078</p>
+        </div>
+        <div class="footer-email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>fakeemail@bookyourtrip.com</p>
+        </div>
+        <div class="footer-phone-number">
+            <i class="fa-solid fa-phone"></i>
+            <p>+1 815 232 4148</p>
+        </div>
+    </div>      
+    <div class="footer-copyright">
+        <i class="fa-regular fa-copyright"></i>
+        <p>2022 This website is for practice only</p>
+    </div>    
+</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.pc-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px;
+}
+
+.pc-section-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.pc-card-container {
+    width: 352px;
+    height: 469px;
+    margin: 72px 48px;
+    background-color: navy;
+    display: grid;
+    grid-template-columns: 117.3px 234.6px;
+    grid-template-rows: 156px 312px;
+}
+
+.pc-image-border-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 117.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-image {
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 96px;
+    margin-left: 24px;
+}
+
+.pc-header-border-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 220.0px;
+}
+
+.pc-header-container {
+    background: lightgrey;
+    margin: 32px 12px;
+    text-align: left;
+}
+
+.pc-header-container h4, .pc-header-container h6 {
+    margin: 0 0 0 12px;
+}
+
+.pc-description-border-container {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 352px;
+    text-align: left;
+}
+
+.pc-description-inner-container {
+    margin: 0px 24px 48px;
+    background: lightgrey;
+}
+
+.pc-description-container p {
+    padding: 12px 24px;
+}

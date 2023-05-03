@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+
+p {
+  vertical-align: super;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 1.5vh 12px;
+}
+
+.hero-image {
+  display: block;
+  width: 50%;
+}
+
+img {
+  width: 50%;
+  height: 95vh;
+}
+
+.login-form {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+.login-form input {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}

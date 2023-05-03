@@ -1,0 +1,10 @@
+@mixin transition-animation {
+    transition: .3s ease-in-out;
+    content: "";
+    position: absolute;
+}
+
+@mixin hover-transtion-animation {
+    content: "";
+    position: absolute;
+}
